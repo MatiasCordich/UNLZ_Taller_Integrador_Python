@@ -48,7 +48,7 @@ tupla = (10, 20, 30)
 print(type(tupla))  # tuple: Es una lista inmutable
 print("Tupla:", tupla)
 
-# Diccionario: Permiten almacenar pares clave-valor.
+# Diccionario: Permiten almacenar pares clave-valor. Su estructura es similar a la de un JSON
 diccionario = {
     "nombre": "Pepe", 
     "edad": 25

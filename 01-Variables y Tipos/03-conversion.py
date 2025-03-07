@@ -12,6 +12,7 @@ numerito = 10
 # Para poder convertir un int a un string tengo que usar la funcion str()
 print(texto + " " + str(numerito))
 
+
 # Se puede hacer un pasaje de tipos de datos como se muestra en el ejemplo
 
 numerito_2 = 99 # Comienza siendo un int
