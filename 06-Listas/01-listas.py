@@ -51,3 +51,83 @@ rookies = ["Bearman", "Doohan", "Hadjar", "Bortoleto", "Antonelli", "Lawson"]
 rookies[1] = "Colapinto"
 
 print(rookies)
+
+# Añadir un elemento a la lista
+escuderias = ["Ferrari", "McLaren", "Mercedes", "Redbull", "Williams"]
+
+'''
+Para añadir un elemento a una lista debo utlizar el método append()
+'''
+
+escuderias.append("Racing Bulls")
+escuderias.append("Aston Martin")
+
+print(escuderias)
+
+# Iterar una lista con un bucle FOR
+print("----------- PILOTOS -----------")
+
+for piloto in pilotos:
+    print(f"{pilotos.index(piloto) + 1} - {piloto}")
+
+'''
+El método index() es un método que puedo utlizar en la lista con el fin de obtener el índice del elemnto. En el bucle por cada "piloto" me va a sacar su número de índice de la lista y le sumamos 1 para que la lista que me muestra se más natural
+'''
+
+# Iterando una lista con un bucle WHILE
+'''
+Vamos a hacer un programa donde vamos a ingresar más equipos de F1 y cuando escriba la palabra "parar" deje de introducir equipos y me muestra la lista. 
+'''
+
+nueva_escuderia = ""
+
+while nueva_escuderia != "parar":
+    nueva_escuderia = input("Introduce una nueva escudería: ")
+
+    if nueva_escuderia != "parar":
+        escuderias.append(nueva_escuderia)
+
+print("----------- ESCUDERÍAS -----------")
+
+for escuderia in escuderias:
+    print(f"{escuderias.index(escuderia) + 1} - {escuderia}")
+
+# Listas multidimensionales
+'''
+Una lista multidensional puede ocurrir por ejemplo cuando tenemso una lista de listas. 
+'''
+
+pilotos_ferrari = [
+    ["Charles Leclerc", 16], # ÍNDICE 0
+    ["Lewis Hamilton", 44] # ÍNDICE 1
+]
+
+# Acceder a un valor de la lista multidemnsional
+'''
+Supongamos que queremos acceDER al valor 16. Para eso debemos entender lo siguiente:
+
+Primero tenemos que entender que nuestra lista pilotos_ferrari tiene 2 elementos que son sublistas:
+
+pilotos_ferrari[0] → ["Charles Leclerc", 16]
+pilotos_ferrari[1] → ["Lewis Hamilton", 44]
+
+Dentro de pilotos_ferrari[0], el 16 está en la posición 1.
+
+En resumen. 
+
+En la lista pilotos_ferrari hay dos sublistas, primero debemos acceder a la sublista que se encuentra en el ÍNDICE 0
+
+En dicha sublista, debemos acceder al elemento numérico 16 que está en el ÍNDICE 1. 
+
+El primer índice [0] selecciona la primera lista, y el segundo índice [1] selecciona el número 16 dentro de ella.
+
+'''
+
+print(pilotos_ferrari[0][1]) # Salida: 16
+
+# Recorrer esta lista multidimensinal
+
+for piloto in pilotos_ferrari:  # Recorremos la lista principal
+    print(f"Piloto: {pilotos_ferrari.index(piloto) + 1}")
+    for dato in piloto:  # Recorremos cada elemento dentro de la sublista
+        print(f"{dato}")
