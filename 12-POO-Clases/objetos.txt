@@ -1,0 +1,32 @@
+# ------------------------- [PROGRAMACIÓN ORIENTADA A OBJETOS] -------------------------
+
+PROGRAMACIÓN ORIENTADA A OBJETOS
+
+La Programación Orientada a Objetos (POO) es un paradigma de programación que se basa en la siguiente idea: TODO ES UN OBJETO EN DONDE INTERACTUÁN ENTRE SÍ EN NUESTRO PROGRAMA. 
+
+Cada objeto es una representación de la realidad, es decir, una entidad que tiene dos características fundamentales:
+ - propiedades (atributos). 
+ - comportamientos (métodos).
+
+Para poder definir un objeto vamos a tener las CLASES, que son las que van a moldear nuestro objeto en base a qué propiedades y qué métodos van a tener nuestros objetos que vayamos creando.
+
+La POO se basa en 4 Pilares fundamentales que son los siguientes: 
+
+------- ABSTRACCIÓN -------
+Se enfoca en los aspectos esenciales de un objeto y oculta los detalles innecesarios.
+
+Ejemplo: Un coche tiene los métodos de acelerar() y frenar(), pero no me importa saber cómo funciona internamente esas dos funcinalidades.
+
+------- ENCAPSULAMIENTO -------
+Protege los datos (atributos) dentro de una clase, permitiendo el acceso solo a través de métodos específicos.
+
+Ejemplo: Una cuenta bancaria no permite acceder directamente al saldo, sino que se usa un método para consultarlo.
+
+------- HERENCIA -------
+Permite crear nuevas clases basadas en una clase existente, reutilizando sus atributos y métodos.
+
+Ejemplo: Un CocheElectrico puede heredar de una clase Vehiculo.
+
+------- POLIMORFISMO -------
+Permite usar el mismo método en diferentes clases, con comportamientos distintos.
+Ejemplo: Perro y Gato tienen un método hacer_sonido(), pero cada uno lo implementa de manera diferente.
