@@ -1,0 +1,8 @@
+# ------------------------- [HERENCIA] -------------------------
+
+Ahora bien, también podemos hacer clases que HEREDEN tanto atributos como métodos de otras clases. 
+
+La clase BASE, o clase MADRE, va a tener atributos y métodos de base que van a ser utilizados por sus clases 
+hijas donde van a heredar todos los atributos y métodos, además, la clase hija tendrá sus propios métodos y atributos. 
+
+De esta manera podemos dar una capa a abstracción donde, en una primera instancia, definimos características generales y funciones generales que pueden ser usados en cualquier clase hija donde, esta mismma, va a tener sus características y funciones más específicas. 
