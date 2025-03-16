@@ -1,3 +1,4 @@
+# ------------------------- [ENCAPSULAMIENTO] -------------------------
 '''
 Nuestra clase Coche está cumpliendo con los pilares de POO. 
 
