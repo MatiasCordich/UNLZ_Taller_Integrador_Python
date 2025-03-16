@@ -23,6 +23,8 @@ class Coche:
       self.__potencia = potencia
       self.__plazas = plazas
 
+    # De ahora en más si quiero acceder a los atributos dentro de la clase deberán llevar sí o sí el doblo guíon bajo __
+    
     # SETTERS - Accedemos a la propiedades de nuestro objeto para definir o cambiar un valor. Hacemos SETTERS por la cantidad de propiedades que tenemos 
 
     def setColor(self, color):
