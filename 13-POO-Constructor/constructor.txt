@@ -1,0 +1,11 @@
+# ------------------------- [CONSTRUCTOR] -------------------------
+
+
+En el ejemplo anterior, nuestra clase Coche tiene atributos cuyos valores ya vienen por defecto lo que haría que, cuando instanciemos varias clases de tipo Coche, todos los objetos de tipo Coche serán iguales. 
+
+Si bien, mediante el uso de los SETTERS podemos cambiarle los valores de los atributos a cada objeto, el problema es que a la larga termina siendo engorroso, para eso tenemos que proveer a la clase de un método especial que se llama CONSTRUCTOR. 
+
+El CONSTRUCTOR es un método especial dentro de una clase que se usa para darle un valor a los atributos del objeto al crearlo, los parámetros que va a recibir van a ser los valores de los atributos de dicho objeto. 
+
+Entonces vamos a modificar nuestra clase Coche agregándole el CONSTRUCTOR y,además, vamos a crear un archivo Python donde solo va a estar nuestra clase y la vamos a importar como un módulo.
+
