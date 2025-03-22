@@ -1,19 +1,18 @@
 # ------------------ TALLER INTEGRADOR DE PYTHON (UNLZ) ------------------
-# CLASE: 
+#  
 # PROFESOR: GABRIEL NIGLIO
 # CUATRIMESTRE: 1ER CUATRIMESTRE
 # AÑO: 2025
-# 
 
 # ------------------------- [VARIABLES] -------------------------
 '''
-Como mencionamos anteriormente, Python es un lenguaje de programación cuyo tipado es DINÁMICO, es decir, NO es necesario declarar el tipo de una variable; el tipo de variable se determina en tiempo de ejecución. 
+En Python, las variables no almacenan valores de forma directa, sino que apuntan a objetos 
 '''
 
-variable = 10  # x es un entero
-variable = "Hola"  # Ahora x es una cadena
+variable = 10  # Acá variable no "es" int, sino que apunta a un objeto de tipo int que tiene un valor de 4
+variable = "Hola"  # Ahora variable apunta a un objeto que es de tipo str que tiene como valor "Hola"
 
-print(variable) # Cuando se ejecute se va a ejectuar el ultimo valor asigna de x
+print(variable) # Cuando se ejecute se va a ejectuar el último valor del objeto asociado a la variable 
 
 '''
 También podemos crear múltiples variables y asignarles a cada una de ellas una valor específico separándolas por comas como vemos en el siguiente ejemplo

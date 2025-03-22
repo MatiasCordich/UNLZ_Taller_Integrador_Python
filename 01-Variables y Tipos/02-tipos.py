@@ -1,13 +1,14 @@
 # ------------------------- [TIPOS DE DATOS] -------------------------
 '''
-Aunque Python sea un lenguaje de programación de tipado dinámico y, no haga falta especificar el tipo de dato a la variable, aun así posee distintos tipos de datos. Existen dos grandes categorias de tipos de datos que son los PRIMITIVOS y ESTRUCTURADOS.
+Python es un lenguaje que es fuertemente tipado PERO el lenguaje permite que no se declare explícitamente el tipo de dato, ya que, como dijimos anteriormente, cada variable tiene un tipo ASOCIADO al objeto al que apunta. 
+
+Por eso, en Python no existen los tipos de datos primitivos, sino que cada valor es un instacia de una clase. 
 '''
 
-
-# 1- Tipos Primitivos: Son los tipos de datos más básicos, que almacenan un solo valor.
+print("# -------------------------------------------------------------------")
 
 # Nulo: Representa una variable cuyo valor es nulo 
-nada = None # None 
+nada = None # NoneType 
 print(type(nada)) # Con la funcion type() podemos ver que tipo de dato es la variable
   
 # Numéricos: Representan valores numéricos.
@@ -36,7 +37,7 @@ texto = "Hola, Python!"
 print(type(texto)) # str: Texto en comillas
 print("Texto:", texto)
 
-# 2- Tipos Estructurados: Permiten almacenar y organizar múltiples valores.
+print("# -------------------------------------------------------------------")
 
 # Lista: Son colecciones ordenadas de elementos
 lista = [1, 2, 3, "cuatro"]  
@@ -60,4 +61,25 @@ print("Diccionario:", diccionario)
 rango = range(9)
 print(type(rango))  # range: rango de valores del 0 al 9 (más adelante veremos como imprimir todos los valores)
 print("Rango:", rango)
+
+print("# -------------------------------------------------------------------")
+
+# Funciones
+'''
+En Python tambien puedo asociar funciones a una variable, por ejemplo: si a la variable la asocio a la función print esta va a apuntar a la función y va a servir como un alias de la función. 
+'''
+
+mostrar = print  # La variable "mostrar" ahora apunta a la función print
+mostrar("La llegaron las pipshassshh")  # Equivale a print("La llegaron las pipshassshh")
+
+'''
+¿Qué sucede realmente?
+
+print en Python es un objeto de tipo función.
+
+mostrar = print no copia la función, sino que hace que "mostrar" apunte a la misma función.
+
+Ahora puedes llamar a mostrar() como si fuera print().
+'''
+
 

@@ -1,7 +1,7 @@
 # ------------------------- [CONVERTIR DE UN TIPO DE DATO A OTRO] -------------------------
 '''
-Mencionamos que Python es un lenguaje de programación de tipado DINÁMICO pero también, 
-es un lenguaje cuyo tipado es FUERTE, es decir, aunque no especifique que tipo de dato es una variable, Python no permite ciertas operaciones entre tipos de datos que sean incompatibles sin antes convertirlos. 
+Aunque en Python a las variable podemos cambiarle el objeto al que apunta, cambiando su tipo, 
+debemos recordar que es de tipado FUERTE, es decir, Python no permite ciertas operaciones entre tipos de datos que sean incompatibles sin antes convertirlos. 
 '''
 
 texto = "Hola, mi edad es"
