@@ -1,9 +1,8 @@
 # ------------------ TALLER INTEGRADOR DE PYTHON (UNLZ) ------------------
-# CLASE: 
+
 # PROFESOR: GABRIEL NIGLIO
 # CUATRIMESTRE: 1ER CUATRIMESTRE
 # AÑO: 2025
-# 
 
 # ------------------------- [COMENTARIOS EN PYTHON] -------------------------
 
