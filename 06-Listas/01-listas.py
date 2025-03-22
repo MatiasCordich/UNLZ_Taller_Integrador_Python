@@ -26,7 +26,7 @@ Hamilton -> ÍNDICE 4
 
 '''
 
-# Indices 
+# Acceder a un elemento de la lista 
 '''
 Para poder acceder a un elemento de una lista en particular tenemos que tner en cuenta su número de índice y lo tenemos que hacer de la siguiente manera. 
 '''
@@ -34,16 +34,30 @@ Para poder acceder a un elemento de una lista en particular tenemos que tner en 
 print(pilotos[1]) # Verstappen
 
 '''
+Tambien puedo acceder a los valores con números negativos, esto hace que acceda desde el último elemento 
+'''
+
+print(pilotos[-1]) # Hamilton
+
+
+# Slicing. Acceder a varios elementos de una lista mediante un rango
+'''
 También puede seleccionar la cantidad de elemntos que quiera de mi lista a partir de especificarle un rango desde cúal índice hasta qué indice, como vemos a continuación.
 '''
 
-print(pilotos[2:4]) # [Norris, Alonso]
-'''
-Como vemos solo me trajo dos elemntos. Debemos creer que debería también incluir el elemento "Hamilton" que es el índice 4 pero tenemos que tener en cuenta esto:
+print(pilotos[:3]) # Muestra desde el inicio hasta el índice 3 (sin incluir el indice 3) ['Leclerc', 'Verstappen', 'Norris']
 
-- El primer índice es INCLUSIVO, es decir, se incluye dentro de lo que voy a recuperar de esa lista.
-- El segundo índice es EXCLUYENTE, es decir, no se va incluir dentro de la información que se va a recuperar. Este índice sólo me indica el límite del rango de elemntos. 
+print(pilotos[2:4]) # Muestra desde el índice 2 hasta el índice 4 (sin incluir el 4) [Norris, Alonso]
+
+print(pilotos[:-3])  # Muestra desde el inicio hasta el tercer elemento desde el final (sin incluirlo) ['Leclerc', 'Verstappen']
+
+# Slicing con paso: [inicio:fin:paso]
 '''
+Tambíen podemos seleccionar la cantidad de elementos que queramos de mi lista y que, además, me los seleccione mediante pasos
+'''
+print(pilotos[::2])  # Muestra los elementos de la lista de dos en dos: ['Leclerc', 'Norris', 'Hamilton']
+
+print(pilotos[1:3:2])  # Desde el índice 1 hasta el 3 (sin incluirlo), saltando de 2 en 2: ['Verstappen']
 
 # Modificar un índice
 rookies = ["Bearman", "Doohan", "Hadjar", "Bortoleto", "Antonelli", "Lawson"]
