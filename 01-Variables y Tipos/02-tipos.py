@@ -39,28 +39,75 @@ print("Texto:", texto)
 
 print("# -------------------------------------------------------------------")
 
-# Lista: Son colecciones ordenadas de elementos
+# Lista: Son colecciones ordenadas de elementos. Las listas se guardan en memoria por lo que sus valores se guardan. 
 lista = [1, 2, 3, "cuatro"]  
 print(type(lista)) # list: Lista modificable
 print("Lista:", lista)
 
-# Tupla: Son lo mismo que las listas pero no cambian
+# Tupla: Son lo mismo que las listas pero no cambian, no se pueden ordenar, modificar o lo que sea que altere su estructura.
 tupla = (10, 20, 30)
 print(type(tupla))  # tuple: Es una lista inmutable
 print("Tupla:", tupla)
 
+# Si yo hago una TUPLA de un solo elemento, Python lo va a entender como una variable para hacer una TUPLA de un solo elemento lo hago de la siguieente forma
+tupla_2 = (2,) # Le agrego una coma
+print(type(tupla_2))  # tuple: Es una lista inmutable
+print("Tupla 2:", tupla_2)
+
 # Diccionario: Permiten almacenar pares clave-valor. Su estructura es similar a la de un JSON
-diccionario = {
-    "nombre": "Pepe", 
-    "edad": 25
-}
+
+diccionario = dict()
+
+diccionario["gato"] = "Felino chiquito de 4 patas"
+diccionario["perro"] = "Animal que tiene cola, 4 patas y laddra"
+
+valor = diccionario["perro"]
+
+print(valor)
 print(type(diccionario))  # dict: Pares clave-valor
 print("Diccionario:", diccionario)
 
-# Rango: Es una secuencia de numeros donde le definimos un rango 
-rango = range(9)
-print(type(rango))  # range: rango de valores del 0 al 9 (más adelante veremos como imprimir todos los valores)
+# Otra forma de definir un diccionar es con las llaves {}
+
+numeros = {
+    1: "uno",
+    2: "dos",
+    3: "tres",
+    4: "cuatro, como los que se comió Brasil"
+}
+
+print(numeros[1])
+
+# Rango: Es una secuencia de numeros donde le definimos un rango. Se crea una colección que va desde un numero hasta otro.  
+rango = range(9) # 0,1,2,3,4,5,6,7,8
+print(type(rango))  # range: rango de valores del 0 al 8 (más adelante veremos como imprimir todos los valores)
 print("Rango:", rango)
+
+# Le definimos un numero de inicio
+rango_2 = range(2,6) # 2,3,4,5
+
+# Le definimos numeros de inicio, fin y de salto
+rango_3 = range(1,7,2) # 1,3,5
+
+# Para poder ver el rango debemos hacer un bucle
+for x in rango:
+ print(x)
+
+print("\n")
+for x in rango_2:
+ print(x)
+
+print("\n")
+
+for x in rango_3:
+ print(x)
+
+# Los rangos no guardan en memoria. Generan datos a demanda. 
+rango_grande = range(0,99999999)
+
+for n in rango_grande:
+  if n % 10000000 == 0:
+    print(n)
 
 print("# -------------------------------------------------------------------")
 
