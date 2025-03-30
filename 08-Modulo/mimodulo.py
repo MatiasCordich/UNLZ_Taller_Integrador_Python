@@ -42,3 +42,33 @@ def calculadora(num_1, num_2, basicas = False):
             cadena += "\n"
     
     return cadena
+
+# Puedo hacer una función que me devuelva un diccionario 
+def info_numero(num):
+ 
+ # Variable que transforma el numero ingresado a su doble
+ d = num * 2
+
+ # Validación por si ingresamos un numero positivo
+ neg = num
+ if num > 0:
+   neg = num * (-1)
+
+ resultado = {
+     "original": num,
+     "cuadrado": num**2,
+     "doble": d,
+     "es par": num % 2 == 0,
+     "neg": neg 
+ }
+
+ return resultado
+
+# Funcion que me haga una sumatorio de un conjunto
+def sumar_todos(ite) -> int:
+    acum = 0
+
+    for x in ite:
+        acum += x  
+
+    return acum 
