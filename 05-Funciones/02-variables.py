@@ -1,6 +1,6 @@
 # ------------------------- [VARIABLES] -------------------------
 '''
-Este apartado de variables se encuentra en la carpeta de 05-Funciones porque con las mismas podemos definir dos topos de variables:
+Este apartado de variables se encuentra en la carpeta de 05-Funciones porque con las mismas podemos definir dos tipos de variables:
 
 Variables locales: Son la variables que se definen dentro de la funcion y no se pueden usar fuera de lla, su ciclo de vida empieza y termina dentro de la funcion, aunque podemos recuperar el valor de la misma si hacemos un return. 
 
