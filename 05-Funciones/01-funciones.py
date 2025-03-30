@@ -105,8 +105,34 @@ def sumar(a, b):
     return a + b
 
 resultado = sumar(5,3)
-
 print(resultado)
+
+# Ejemplo 6.1 - Return de un diccioario
+
+def info_numero(num):
+ 
+ # Variable que transforma el numero ingresado a su doble
+ d = num * 2
+
+ # Validación por si ingresamos un numero positivo
+ neg = num
+ if num > 0:
+   neg = num * (-1)
+
+ resultado = {
+     "original": num,
+     "cuadrado": num**2,
+     "doble": d,
+     "es par": num % 2 == 0,
+     "neg": neg 
+ }
+
+ return resultado
+
+resultado_2 = info_numero(5)
+print(resultado_2)
+
+
 
 # Funciones dentro de otras de funciones
 '''
