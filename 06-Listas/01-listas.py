@@ -8,6 +8,9 @@ En esta sección vamos a profundizar más en las listas trabajando en ellas.
 # Definir una lista
 pilotos = ["Leclerc", "Verstappen", "Norris", "Alonso", "Hamilton"] 
 
+# Tambien podemos crear una lista a partir de su constructor
+grandes_premios = list()
+
 # Las listas no tienen ninguna reestriccion 
 estadísticas = ["Verde", 23, 4.4, True, "Texto"] 
 
