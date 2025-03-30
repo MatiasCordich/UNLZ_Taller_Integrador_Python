@@ -3,6 +3,11 @@
 Es otra estructura de datos que es muy similar a la lista pero en lugar de tener un ÍNDICE numérico va a tener índices alfanúmericos.
 
 Su similitud, con respecto a otros lenguajes, es con un ARRAY ASOCIATIVO o un OBJETO JSON.
+
+Los diccionarios tienen 3 objetivos:
+- Realizar objetos flexibles
+- Indexar conjuntos de datos
+- Guardar datos inesperados
 '''
 
 piloto = {
@@ -10,7 +15,10 @@ piloto = {
     "apellido": "Alonso",
     "edad": 43,
     "numero": 14,
-    "escuderia": "Aston Martin",
+    "escuderia": {
+        "nombre": "Aston Martin",
+        "color": "verde inglés"
+    },
     "campeonatos": [2005,2006] 
 }
 
@@ -23,7 +31,8 @@ print(piloto["nombre"])
 print(piloto["apellido"])
 print(piloto["edad"])
 print(piloto["numero"])
-print(piloto["escuderia"])
+print(piloto["escuderia"]["nombre"])
+print(piloto["escuderia"]["color"])
 print(piloto["campeonatos"])
 
 # Si queremos acceder a los valores de una lista dentro de un diccionario
