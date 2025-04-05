@@ -1,0 +1,40 @@
+Los JSON (JavaScript Object Notation) es una forma de representar información que sea legible para los seres humanos. 
+Es la forma en la que se comunican las APIS.
+Los JSON son objetos cuya información representa algo en la realidad. 
+
+En un JSON vamos a pasarles los atributos del objeto, NO DEFINIMOS EL TIPO. 
+
+Su estructura es la siguiente. 
+
+Objeto: {}
+Vector: []
+
+Definiendo un JSON como objeto
+
+{
+    "nombre": "Pippo",
+    "edad": 1
+}
+
+Los valores de lo que definimos son:
+STRING: "string"
+Numero: 4
+Float: 1.3
+Boolaeno: True, False
+NO PUEDE TRABAJAR CON FORMATOS DE TIPO FECHA
+
+Como vemos los JSON son parecido a los diccionarios en Python. 
+
+Ahora bien que pasa si tengo dos objetos o más, digo que tengo un vector de objetos. 
+
+[
+    {
+        "nombre": "Pippo",
+        "edad": 1
+    },
+    {
+        "nombre": "Chuchi",
+        "edad": 7
+    }
+]
+
