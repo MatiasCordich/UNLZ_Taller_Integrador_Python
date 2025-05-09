@@ -1,6 +1,9 @@
 from flask import Flask, request
 app = Flask(__name__)
 
+personas = [] 
+
+
 @app.route('/')
 def hello():
     return 'Hello World!'
@@ -136,5 +139,43 @@ def potencias(numero):
     }
 
     return resultado
+
+# Con el snippet routegp nos crea otro parametro que es para especificar qué metodo voy a utilizar. El navegador pega por defecto en GET
+@app.route('/holaa', methods=['POST']) # Esta ruta va a hacer el metodo post
+def holaa():
+    cuerpo = request.json
+
+    return {
+        "enviaste": str(cuerpo),
+        "response": "Hola hiciste un post"
+    }
+
+@app.route('/saludo', methods=['POST']) # Esta ruta va a hacer el metodo post
+def saludo():
+
+    # El JSON que puse como un body le pido que me extraiga el valor de "nombre" y que me la guarde en una variable. 
+    nombre = request.json["nombre"]
+    dia = request.json["cumpleanios"]["dia"]
+    auto = request.json["autos"][1]
+
+    return {
+        "response": f"Hola, {nombre}, tu dia de cumpleanios es el {dia} y tu auto es un {auto}"
+    }
+
+
+
+@app.route('/personas', methods=['POST']) # Esta ruta va a hacer el metodo post
+def post_persona():
+
+    data = request.json
+
+    persona = {
+        "nombre": data["nombre"],
+        "edad": data["edad"]
+    }
+
+    personas.append(persona)
+    return {"message": "Ta bien (Y)"}
+
 if __name__ == '__main__':
     app.run(debug=True)
